@@ -1,5 +1,5 @@
 /* ==========================================================================
-   1. VARIABLES GLOBALES Y RESET
+        GENERAL
    ========================================================================== */
 :root {
     --bg-main: #0f172a;       /* Fondo oscuro principal */
@@ -32,9 +32,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ==========================================================================
-   2. REUTILIZABLES Y LAYOUT
-   ========================================================================== */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -70,7 +67,7 @@ body {
 }
 
 /* ==========================================================================
-   3. BOTONES
+    BOTONES
    ========================================================================== */
 .btn {
     display: inline-block;
@@ -117,7 +114,7 @@ body {
 }
 
 /* ==========================================================================
-   4. NAVEGACIÓN Y HEADER (Corregido para Desktop y Móvil)
+    NAVEGACIÓN Y HEADER 
    ========================================================================== */
 .header {
     position: fixed;
@@ -174,7 +171,7 @@ body {
     display: none !important;
 }
 
-/* --- ESTILOS RESPONSIVOS PARA CELULARES Y TABLETS (<768px) --- */
+/* --- ESTILOS RESPONSIVOS PARA CELULARES Y TABLETS --- */
 @media (max-width: 768px) {
     /* Mostrar botón de hamburguesa solo en pantallas pequeñas */
     .menu-icon {
@@ -206,7 +203,7 @@ body {
 }
 
 /* ==========================================================================
-   5. SECCIÓN HERO (Diseño balanceado de 2 columnas)
+   5. SECCIÓN HERO 
    ========================================================================== */
 .hero {
     min-height: 90vh;
@@ -217,7 +214,7 @@ body {
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr; /* 2 columnas proporcionales */
+    grid-template-columns: 1.2fr 0.8fr; 
     gap: 40px;
     align-items: center;
 }
@@ -263,7 +260,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Contenedor e imagen flotante a la derecha */
 .hero-img-container {
     display: flex;
     justify-content: center;
@@ -286,7 +282,7 @@ body {
 }
 
 /* ==========================================================================
-   6. SECCIÓN HABILIDADES (SKILLS)
+  SKILLS
    ========================================================================== */
 .skills-grid {
     display: grid;
@@ -320,7 +316,7 @@ body {
 }
 
 /* ==========================================================================
-   7. SECCIÓN PROYECTOS EN CARRUSEL
+  PROYECTOS EN CARRUSEL
    ========================================================================== */
 .carousel-wrapper {
     position: relative;
@@ -456,7 +452,7 @@ body {
 .next-btn { right: 0; }
 
 /* ==========================================================================
-   8. SECCIÓN CONTACTO Y FOOTER
+    SECCIÓN CONTACTO Y FOOTER
    ========================================================================== */
 .contact-form {
     max-width: 600px;
@@ -506,7 +502,7 @@ footer {
 }
 
 /* ==========================================================================
-   9. MEDIA QUERIES (ADAPTABILIDAD RESPONSIVA)
+   ADAPTABILIDAD RESPONSIVA
    ========================================================================== */
 
 /* Laptops y pantallas medianas (hasta 1024px) */
