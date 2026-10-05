@@ -70,5 +70,4 @@ document.addEventListener('DOMContentLoaded', () => {
             carousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
         });
     }
-
 });
