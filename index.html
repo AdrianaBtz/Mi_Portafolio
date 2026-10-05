@@ -12,38 +12,41 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <header class="header">
+    <div class="container navbar">
+        <a href="#inicio" class="logo">Adriana Btz</a>
 
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
+        <!-- Checkbox e icono para celulares -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-    <!-- INICIO (HERO) -->
-    <header id="inicio" class="section hero">
-        <div class="container hero-container">
-            <div class="profile-frame">
-                <img src="fotoperfil.jpeg" alt="Adriana Benítez" class="profile-img">
-            </div>
-            <div class="hero-text">
-                <span class="badge">Java Full Stack Developer Jr.</span>
-                <h1>Hola, soy <span class="gradient-text">Adriana Benítez</span></h1>
-                <p>Desarrollo aplicaciones web dinámicas, interfaces interactivas y APIs REST robustas.</p>
-                <div class="hero-buttons">
-                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-                    <a href="https://github.com/AdrianaBtz" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
-                </div>
+        <!-- Enlaces de navegación -->
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+</header>
+
+    <!-- SECCIÓN HERO -->
+<section id="inicio" class="hero">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <span class="subtitle">Java Full Stack Developer Jr.</span>
+            <h1>Hola, soy Adriana Benítez</h1>
+            <p>Desarrollo aplicaciones web dinámicas, interfaces interactiva y APIs REST robustas.</p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                <a href="https://github.com/AdrianaBtz" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
             </div>
         </div>
-    </header>
+        <div class="hero-img-container">
+            <img src="img/fotoperfil.jpeg" alt="Adriana Benítez" class="profile-img">
+        </div>
+    </div>
+</section>
 
     <!-- SOBRE MÍ -->
     <section id="sobre-mi" class="section">
@@ -58,45 +61,95 @@
         </div>
     </section>
 
-    <!-- PROYECTOS -->
-    <section id="proyectos" class="section bg-alt">
-        <div class="container">
-            <h2 class="section-title">Proyectos</h2>
-            <div class="projects-grid">
+<!-- SECCIÓN PROYECTOS EN CARRUSEL -->
+<section id="proyectos" class="section bg-alt">
+    <div class="container">
+        <h2 class="section-title">Proyectos Destacados</h2>
+
+        <div class="carousel-wrapper">
+            <!-- Botón Izquierda -->
+            <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Proyecto anterior">&#10094;</button>
+
+            <!-- Carrusel -->
+            <div class="projects-carousel" id="projectsCarousel">
                 
                 <article class="card">
-                    <div class="card-body">
-                        <h3>Plataforma 3V</h3>
-                        <p>E-commerce dinámico con carrito de compras, gestión de productos e interfaz completamente responsiva.</p>
+                    <div class="card-img">
+                        <img src="img/tienda3v.png" alt="Vista previa de Plataforma 3V">
                     </div>
-                    <div class="card-footer">
+                    <div class="card-content">
+                        <h3>Plataforma 3V</h3>
+                        <p>E-commerce dinámico con carrito de compras, gestión de productos y persistencia de datos.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
                         <a href="https://github.com/FerIqm1993/Proyecto-Integrador-Generation" target="_blank" rel="noopener noreferrer" class="btn btn-card">Ver en GitHub &rarr;</a>
                     </div>
                 </article>
 
                 <article class="card">
-                    <div class="card-body">
-                        <h3>SportStore</h3>
-                        <p>Landing page interactiva diseñada para la exhibición y navegación de productos clave en una tienda deportiva.</p>
+                    <div class="card-img">
+                        <img src="img/sportstore.png" alt="Vista previa de SportStore">
                     </div>
-                    <div class="card-footer">
+                    <div class="card-content">
+                        <h3>SportStore</h3>
+                        <p>Landing page interactiva diseñada para la exhibición y navegación de productos clave.</p>
+                        <div class="tech-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
                         <a href="https://github.com/VictorLazaro0/-Proyecto-LandingPage" target="_blank" rel="noopener noreferrer" class="btn btn-card">Ver en GitHub &rarr;</a>
                     </div>
                 </article>
 
                 <article class="card">
-                    <div class="card-body">
-                        <h3>AdoptaMascotas</h3>
-                        <p>Anuncio principal de una pagina web sobre la adopción de mascotas</p>
+                    <div class="card-img">
+                        <img src="img/mascotas.png" alt="Vista previa de AdoptaMascotas">
                     </div>
-                    <div class="card-footer">
+                    <div class="card-content">
+                        <h3>AdoptaMascotas</h3>
+                        <p>Interfaz responsiva para una plataforma orientada a la adopción responsable de mascotas.</p>
+                        <div class="tech-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">Bootstrap 5</span>
+                            <span class="tag">CSS3</span>
+                        </div>
                         <a href="https://github.com/AdrianaBtz" target="_blank" rel="noopener noreferrer" class="btn btn-card">Ver en GitHub &rarr;</a>
                     </div>
                 </article>
 
             </div>
+
+            <!-- Botón Derecha -->
+            <button class="carousel-btn next-btn" id="nextBtn" aria-label="Siguiente proyecto">&#10095;</button>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- HABILIDADES TÉCNICAS -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h4>Backend</h4>
+                <p>Java, Spring Boot, APIs REST, MySQL, Postman</p>
+            </div>
+            <div class="skill-card">
+                <h4>Frontend</h4>
+                <p>JavaScript (ES6+), HTML5, CSS3, Bootstrap 5, Layouts Responsivos</p>
+            </div>
+            <div class="skill-card">
+                <h4>Herramientas & Ágiles</h4>
+                <p>Git, GitHub, Scrum, Trello, Trabajo Colaborativo</p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- CONTACTO -->
     <section id="contacto" class="section">
@@ -104,7 +157,7 @@
             <h2 class="section-title center">Contacto</h2>
             <p class="section-subtitle">¿Tienes alguna propuesta o te gustaría colaborar? ¡Mándame un mensaje!</p>
 
-            <form action="#" method="POST" class="contact-form" onsubmit="return false;">
+           <form class="contact-form">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
@@ -129,5 +182,8 @@
         </div>
     </footer>
 
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
